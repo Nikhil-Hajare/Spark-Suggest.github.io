@@ -1,0 +1,351 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+header{
+    background: black;
+    width: 100%;
+    height: 50px;
+}
+
+nav #icon{
+    display:none;
+  font-size: 26px;
+  line-height: 60px;
+  float: right;
+  /* margin-right: 40px; */
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+#icon img{
+    height: 30px;
+    width: 30px;
+}
+
+h2{
+    color: cyan;
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px; 
+    
+}
+span{
+    color: yellow;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul{
+   width: auto;
+   float: right;
+   margin-right: 15px;
+   margin-top: 10px;
+}
+
+li{
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+a{
+    color:  #eeebd9;
+    text-decoration: none;
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 10px;
+}
+
+.banner{
+    position: relative;
+    margin-top:10px ;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.banner img{
+    height: auto;
+    width: 100%;
+}
+
+
+@media screen and (max-width:510px){
+    nav #icon{
+        display: block;
+        margin-right: 15px;
+    }
+
+    h2{
+        color: cyan;
+        font-family: 'Ubuntu', sans-serif;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px; 
+    }
+
+    nav ul{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: #2f3640;
+        top: -10px;
+        left: -100%;
+        text-align: center;
+        transition: all .2s;
+    }
+    nav li{
+        display: inline-block;
+        margin: 20px 20px;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    nav ul.show{
+        left: 0;
+        z-index: 1;
+    }
+}
+
+/* css for flagships section */
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+ .flagshiptxt h3{
+    /* transform:rotate(-90deg); */
+    display: block;
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.flagship{
+    width: 230px;
+    height: 220px;
+    border-top: 2px solid rgb(88, 88, 88);
+    /* border-bottom: 2px solid rgb(88, 88, 88); */
+    border-radius: 8px;
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    /* box-shadow: 8px 4px 3px 1px rgb(87, 87, 87); */
+}
+
+.flagship img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.flagship img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.flagship p{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-weight: normal; 
+}
+
+
+/* css for flagship killer section */
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.flagship-killer{
+    width: 230px;
+    height: 220px;
+    border-top: 2px solid rgb(88, 88, 88);
+    /* border-bottom: 2px solid rgb(88, 88, 88); */
+    border-radius: 8px;
+}
+
+
+.flagship-killer img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.flagship-killer img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+   
+.flagship-killer p{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-weight: normal; 
+    
+}
+
+/* css for under 20000 to 30000 */
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/* .container3 .flagshiptxt h3{
+    transform:rotate(-90deg);
+    margin-top: 115px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    font-style: normal;
+    font-weight: normal;
+    
+} */
+
+.midbudget{
+    width: 230px;
+    height: 220px;
+    border-top: 2px solid rgb(88, 88, 88);
+    /* border-bottom: 2px solid rgb(88, 88, 88); */
+    border-radius: 8px;
+}
+
+.midbudget img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.midbudget img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.midbudget p{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-weight: normal; 
+}
+
+
+
+
+/* css for 15000 to 20000 */
+
+.container4{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/* .container4 .flagshiptxt h3{
+    transform:rotate(-90deg);
+    margin-top: 115px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    font-style: normal;
+    font-weight: normal;
+    
+} */
+
+.budget20k{
+    width: 230px;
+    height: 220px;
+    border-top: 2px solid rgb(88, 88, 88);
+    /* border-bottom: 2px solid rgb(88, 88, 88); */
+    border-radius: 8px;
+}
+    /* border: 2px solid black; */
+
+.budget20k img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.budget20k img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.budget20k p{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-weight: normal; 
+}
+
+
+
+footer{
+    background-color: black;
+    height:70px;
+    
+}
+
+footer p{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
